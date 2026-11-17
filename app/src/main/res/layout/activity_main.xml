@@ -7,6 +7,7 @@
     android:orientation="vertical"
     android:background="#FFFDF5">
 
+    <!-- Original Toolbar -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -18,7 +19,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,6 +28,7 @@
             android:orientation="vertical"
             android:padding="20dp">
 
+            <!-- Welcome Heading -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -37,57 +40,104 @@
                 android:layout_marginTop="25dp"
                 android:layout_marginBottom="30dp" />
 
+            <!-- Popup Menu -->
             <Button
                 android:id="@+id/btnPopup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Open Popup Menu" />
+                android:text="Open Popup Menu"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#17365D" />
 
+            <!-- Floating Menu -->
             <Button
                 android:id="@+id/btnFloating"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Floating Menu"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#17365D"
                 android:layout_marginTop="15dp" />
 
             <Button
                 android:id="@+id/btnStudent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#DCE8F7"
-                android:textColor="#17365D"
                 android:text="Add Student"
+                android:backgroundTint="#DCE8F7"
+                android:layout_marginTop="15dp"
+                android:textColor="#17365D"
                 android:visibility="gone" />
 
             <Button
                 android:id="@+id/btnTeacher"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="Add Teacher"
                 android:backgroundTint="#DCE8F7"
                 android:textColor="#17365D"
-                android:text="Add Teacher"
                 android:visibility="gone" />
 
             <Button
                 android:id="@+id/btnCourse"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="Add Course"
                 android:backgroundTint="#DCE8F7"
                 android:textColor="#17365D"
-                android:text="Add Course"
                 android:visibility="gone" />
 
+            <!-- Context Menu -->
             <TextView
                 android:id="@+id/txtContext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Long Press Here for Context Menu"
                 android:textSize="17sp"
-                android:textColor="#17365D"
+                android:textColor="#FFFFFF"
                 android:gravity="center"
                 android:padding="20dp"
                 android:layout_marginTop="25dp"
-                android:background="#D6BFFF" />
+                android:background="#17365D" />
+
+            <!-- Dialog Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dialog Boxes"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:textColor="#17365D"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="15dp" />
+
+            <Button
+                android:id="@+id/btnSimple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Simple Dialog"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#17365D"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:id="@+id/btnSingle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Single Choice Dialog"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#17365D"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:id="@+id/btnMultiple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Multiple Choice Dialog"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#17365D"
+                android:layout_marginBottom="20dp" />
 
         </LinearLayout>
 

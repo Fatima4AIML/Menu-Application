@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/singleTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Single Choice Dialog"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textColor="#303F9F"
+        android:gravity="center"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select your favorite programming language:"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:padding="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioJava"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Java"
+            android:textColor="#000000"/>
+
+        <RadioButton
+            android:id="@+id/radioPython"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Python"
+            android:textColor="#000000"/>
+
+        <RadioButton
+            android:id="@+id/radioCpp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C++"
+            android:textColor="#000000"/>
+
+        <RadioButton
+            android:id="@+id/radioKotlin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kotlin"
+            android:textColor="#000000"/>
+
+    </RadioGroup>
+
+</LinearLayout>
